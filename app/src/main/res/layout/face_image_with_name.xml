@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/yellow_green_gradient_rectangle">
+
+    <ImageView
+        android:id="@+id/iv_face_image"
+        android:layout_width="116dp"
+        android:layout_height="116dp"
+        android:padding="4dp"
+        android:scaleType="fitCenter"
+        android:contentDescription="@string/face_image"/>
+    <TextView
+        android:id="@+id/tv_person_name"
+        android:layout_width="116dp"
+        android:layout_height="45dp"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textColor="@color/white" />
+
+</LinearLayout>

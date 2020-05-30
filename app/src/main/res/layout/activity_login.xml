@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/dullGreen"
+    tools:context=".LoginActivity">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"/>
+    <TextView
+        android:id="@+id/tv_auth_error_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/yellow"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/EditText"
+        android:hint="@string/username"
+        android:inputType="text"
+        android:autofillHints="username"/>
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/EditText"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:autofillHints="password"/>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+        <ImageButton
+            android:id="@+id/btn_authenticate"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="5dp"
+            android:scaleType="fitXY"
+            android:background="@drawable/yellow_green_gradient_oval"
+            android:src="@drawable/login_icon"
+            android:contentDescription="@string/login_icon_desc"
+            android:onClick="authenticate"
+            android:visibility="visible"/>
+        <ProgressBar
+            android:id="@+id/pb_authenticate"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:visibility="invisible"/>
+    </FrameLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>

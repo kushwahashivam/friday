@@ -1,0 +1,60 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/darkGreen</item>
+        <item name="colorPrimaryDark">@color/dullGreen</item>
+        <item name="colorAccent">@color/green</item>
+        <item name="fontFamily">@font/opensans_regular</item>
+    </style>
+
+    <!-- App name style -->
+    <style name="AppName">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="fontFamily">@font/electrolize_regular</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <!-- Progress icon style -->
+    <style name="ProgressIcon">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginEnd">5dp</item>
+    </style>
+
+    <!-- Progress bar text style -->
+    <style name="ProgressBarText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <!-- Image button style -->
+    <style name="ImageButton">
+        <item name="android:layout_width">86dp</item>
+        <item name="android:layout_height">86dp</item>
+        <item name="android:background">@drawable/yellow_green_gradient_rectangle</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <!-- Edit text style -->
+    <style name="EditText">
+        <item name="android:minHeight">50dp</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:cursorVisible">true</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:background">@drawable/edit_text_background</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="148dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    xmlns:card_view="http://schemas.android.com/tools"
+    card_view:cardElevation="3dp"
+    app:cardCornerRadius="5dp"
+    card_view:cardPreventCornerOverlap="true">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/yellow_green_gradient_rectangle">
+
+        <ImageView
+            android:id="@+id/iv_task_thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/task_thumbnail"/>
+
+        <ProgressBar
+            android:id="@+id/pb_task_progress"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:progressTint="@color/yellow"
+            android:progressBackgroundTint="@color/darkGreen"
+            android:layout_gravity="bottom"
+            android:indeterminate="false"
+            android:max="100"/>
+
+            <TextView
+                android:id="@+id/tv_datetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/white"
+                android:layout_marginStart="10dp"
+                android:textSize="22sp" />
+            <ImageView
+                android:id="@+id/iv_task_done"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:layout_gravity="center_vertical|end"
+                android:src="@drawable/done_icon"
+                android:contentDescription="@string/done_icon"
+                android:visibility="invisible"/>
+
+    </FrameLayout>
+
+</androidx.cardview.widget.CardView>

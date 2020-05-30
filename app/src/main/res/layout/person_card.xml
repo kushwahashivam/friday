@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="124dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    xmlns:card_view="http://schemas.android.com/tools"
+    card_view:cardElevation="3dp"
+    app:cardCornerRadius="5dp"
+    card_view:cardPreventCornerOverlap="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@drawable/yellow_green_gradient_rectangle">
+        <ImageView
+            android:id="@+id/iv_person_image"
+            android:layout_width="116dp"
+            android:layout_height="116dp"
+            android:layout_margin="5dp"
+            android:padding="4dp"
+            android:background="@drawable/yellow_green_gradient_rectangle"
+            android:scaleType="fitXY"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/person_image"/>
+        <TextView
+            android:id="@+id/tv_person_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxHeight="116dp"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:layout_gravity="center"/>
+        <ImageView
+            android:id="@+id/iv_star_person"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:scaleType="fitXY"
+            android:contentDescription="@string/star_icon_desc"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
